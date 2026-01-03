@@ -1,0 +1,45 @@
+.base-node {
+  border-radius: 12px;
+  padding: 12px;
+  background: #020617;
+  border: 1px solid #1e293b;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+.base-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.25);
+}
+
+
+.base-node__title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #c7d2fe;
+}
+
+.base-node__content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+.base-node__handle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #6366f1;
+  border: 2px solid #020617;
+}
+
+.base-node:hover .base-node__handle {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
